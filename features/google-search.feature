@@ -1,6 +1,6 @@
 Feature: Google Search
   In order to gain more knowledge
-  As a internet user
+  As an internet user
   I want to be able to find information through Google
 
   Scenario: Search finds results
