@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+before_script:
+  - npm prune
+cache:
+  directories:
+  - node_modules
+notifications:
+  email:
+    on_success: change
+    on_failure: always
