@@ -19,7 +19,6 @@
     "babel-plugin-transform-builtin-extend": "^1.1.0",
     "cucumber": "^1.0.0",
     "selenium-webdriver": "^2.53.2",
-    "phantomjs-prebuilt": "^2.1.7",
     "chai": "^3.5.0",
     "sanitize-filename": "^1.6.0",
     "lower-case": "^1.1.3",
