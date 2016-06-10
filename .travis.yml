@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 addons:
-  firefox: "45.2.0"
+  firefox: "45.0"
 before_script:
   - npm prune
   - export DISPLAY=:99.0
