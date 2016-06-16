@@ -1,17 +1,23 @@
 const sanitize = require('sanitize-filename');
-const lowerCase = require('lower-case');
+const _ = require('lodash');
+const { browser } = require('./driver');
 
-export default function() {
+module.exports = function() {
 
-  this.After((scenario) => {
+  this.After(function(scenario) {
+    let promise = null;
     if (scenario.isFailed()) {
-      this.screenshot.create(sanitize(lowerCase(scenario.getName()) + ".png").replace(/ /g, "_"));
+      promise = this.screenshot.create(sanitize(_.toLower(scenario.getName()) + ".png").replace(/ /g, "_"));
     }
-    this.browser.manage().deleteAllCookies();
+    return promise;
   });
 
-  this.registerHandler("AfterFeatures", (event) => {
-    this.browser.quit();
+  this.After(function() {
+    return this.browser.manage().deleteAllCookies();
+  });
+
+  this.registerHandler("AfterFeatures", function() {
+    return browser.quit();
   });
 
 };
