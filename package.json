@@ -27,6 +27,6 @@
   },
   "scripts": {
     "setup": "npm cache clean && rm -rf node_modules && npm install",
-    "test": "cucumber-js -f pretty --compiler=js:babel-register"
+    "test": "cucumber-js --format pretty --compiler=js:babel-register"
   }
 }
