@@ -16,8 +16,9 @@ module.exports = function() {
     return this.browser.manage().deleteAllCookies();
   });
 
-  this.registerHandler("AfterFeatures", function() {
-    return browser.quit();
+  this.registerHandler("AfterFeatures", function(event, callback) {
+    browser.quit();
+    callback();
   });
 
 };
