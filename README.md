@@ -1,6 +1,6 @@
 # `cucumber-js` & `selenium-webdriver` starter
 
-[![Build Status](https://travis-ci.org/MYOB-Technology/cucumber-js-selenium-webdriver-example.svg)](https://travis-ci.com/MYOB-Technology/cucumber-js-selenium-webdriver-example)
+[![Build Status](https://travis-ci.org/MYOB-Technology/cucumber-js-selenium-webdriver-example.svg)](https://travis-ci.org/MYOB-Technology/cucumber-js-selenium-webdriver-example)
 
 ## Overview
 An example of browser based testing via:
