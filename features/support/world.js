@@ -1,6 +1,6 @@
 import { driver, browser } from './driver';
-import Screenshot from './Screenshot';
-import PageFactory from './pages/Factory';
+import Screenshot from '../selenium/Screenshot';
+import PageFactory from '../pages/Factory';
 
 module.exports = function World() {
   this.driver = driver;

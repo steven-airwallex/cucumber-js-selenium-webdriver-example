@@ -1,2 +1,2 @@
 export const driver = require("selenium-webdriver");
-export const browser = new driver.Builder().withCapabilities(driver.Capabilities.firefox()).build();
+export const browser = new driver.Builder().forBrowser("firefox").build();

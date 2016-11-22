@@ -1,10 +1,11 @@
 language: node_js
 node_js:
 addons:
-  firefox: "45.2.0esr"
+  firefox: "50.0"
 before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - npm run install_selenium_driver
 before_script:
   - npm prune
 cache:

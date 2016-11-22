@@ -5,7 +5,7 @@
 ## Overview
 An example of browser based testing via:
 * [cucumber-js](https://github.com/cucumber/cucumber-js)
-* [selenium-webdriver](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs)
+* [selenium-webdriver](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs), running tests on Firefox via [geckodriver](https://github.com/mozilla/geckodriver)
 * Use of [page objects](http://martinfowler.com/bliki/PageObject.html)
 * Use of ES6 & ES7 syntax
 
