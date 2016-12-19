@@ -26,8 +26,10 @@
     "mkdirp": "^0.5.1"
   },
   "scripts": {
-    "install-selenium-driver": "./provisioning/install_selenium_driver.sh",
-    "setup": "npm cache clean && rm -rf node_modules && npm install && npm run install-selenium-driver",
-    "test": "cucumber-js --format pretty --compiler=js:babel-register --require=features/support --require=features/step_definitions"
+    "clean": "rm -rf tmp",
+    "install-geckodriver": "./provisioning/install_geckodriver.sh",
+    "setup": "npm cache clean && rm -rf node_modules && npm install && npm run install-geckodriver",
+    "test": "PATH=$PATH:build/install_libraries/bin cucumber-js --format pretty --compiler=js:babel-register --require=features/support --require=features/step_definitions",
+    "commit": "npm run clean && npm run test"
   }
 }
